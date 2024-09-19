@@ -118,9 +118,9 @@ describe('Blockchain', () => {
     });
 });
 */
-const Blockchain = require('./blockchain'); 
+const Blockchain = require('./index'); 
 const Block = require('./block');
-
+const cryptoHash=require('../util');
 describe('Blockchain', () => { 
     let blockchain, newChain, originalChain;
 
@@ -130,8 +130,8 @@ describe('Blockchain', () => {
 
         originalChain = blockchain.chain;
     });
-
-    it('contains a chain Array instance', () => {
+//corrected
+    it('contains a `chain` Array instance', () => {
         expect(blockchain.chain instanceof Array).toBe(true); 
     });
 

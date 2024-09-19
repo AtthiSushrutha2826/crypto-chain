@@ -57,7 +57,7 @@ class Blockchain {
 
 module.exports = Blockchain;*/
 const Block = require('./block');
-const cryptoHash = require('./crypto-hash');
+const {cryptoHash} = require('../util');
 
 class Blockchain {
     constructor() {

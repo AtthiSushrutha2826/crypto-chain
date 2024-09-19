@@ -92,7 +92,7 @@ describe('Block', () => {
 */
 const Block = require('./block');
 const { GENESIS_DATA, MINE_RATE } = require('./config');
-const cryptoHash = require('./crypto-hash');
+const cryptoHash = require('../util');
 
 describe('Block', () => {
     const timestamp = 2000;
